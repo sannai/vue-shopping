@@ -1,0 +1,57 @@
+# stepv
+<h1>vuex购物车</h1>
+<p>一般看文档一边动手实现购物车</p>
+<p>通过这小案例知道自己有非常多的不足</p>
+<p>比如：</p>
+<p>语法，写法，规范，搞不清楚何时使用getters或者mutations</p>
+<div>通过这案例学习对自己还是有很大提升</div>
+> vue2-stepv
+
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+
+
+## 结构
+
+``` bash
+└── src
+    ├── api                                     #API接口
+    │   └── user.js                                #用户接口
+	├── components                              #组件
+	│   └── common                                 #公共组件
+	├── config                                  #基本配置
+	│   └── index.js                              #配置文件
+    ├── images                                 	#图片
+	├── pages                                   #页面
+	│   └── user                                   #用户页面
+	│   	├── detail.vue                        #用户详情页
+	│       └── index.vue                         #用户主页
+    ├── plugins                                 #第三方资源（主要放置jQuery插件，尽可能使用CDN）
+    ├── router                                  #路由
+    │   └── index.js                               #配置
+    ├── store                                   #vuex状态管理
+    │	├── modules                         	   #store模块
+    │	│	└── user.js							      #用户模块
+    │   ├── action.js                              #配置actions 不是必须的
+    │   ├── getters.js                             #配置getters
+    │   ├── index.js                               #创建store
+    │   ├── mutation-types.js                      #定义常量muations名
+    │   └── mutations.js                           #配置mutations
+    ├── styles                                 	#样式
+    └── utils                                	#公共JS
+        └── http.js                                #封装axios（使用参数方式调用）
+```
+
+
